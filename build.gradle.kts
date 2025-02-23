@@ -1,5 +1,6 @@
 plugins {
-    kotlin("jvm") version "2.1.10"
+    kotlin("jvm") version "1.9.24"
+    id("com.google.devtools.ksp") version "1.9.24-1.0.20"
 }
 
 group = "org.example"
@@ -10,6 +11,7 @@ repositories {
 }
 
 dependencies {
+    ksp("io.github.antonbutov:code-factory-processor:0.0.6")
     testImplementation(kotlin("test"))
 }
 
